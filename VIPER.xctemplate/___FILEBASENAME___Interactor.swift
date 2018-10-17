@@ -4,19 +4,25 @@
 
 import Foundation
 
-public class ___FILEBASENAMEASIDENTIFIER___Interactor {
+public protocol ___VARIABLE_productName___InteractorProtocol {
     
-    fileprivate var service : ___FILEBASENAMEASIDENTIFIER___ServiceProtocol?
-    fileprivate var presenter : ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?
+    func setPresenter(_ presenter: ___VARIABLE_productName___PresenterProtocol)
+    func setService(_ service: ___VARIABLE_productName___ServiceProtocol)
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
+public class ___VARIABLE_productName___Interactor {
     
-    public func setService(service: ___FILEBASENAMEASIDENTIFIER___ServiceProtocol) {
+    fileprivate var service : ___VARIABLE_productName___ServiceProtocol?
+    fileprivate var presenter : ___VARIABLE_productName___PresenterProtocol?
+}
+
+extension ___VARIABLE_productName___Interactor: ___VARIABLE_productName___InteractorProtocol {
+    
+    public func setService(_ service: ___VARIABLE_productName___ServiceProtocol) {
         self.service = service
     }
     
-    public func setPresenter(presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol) {
+    public func setPresenter(_ presenter: ___VARIABLE_productName___PresenterProtocol) {
         self.presenter = presenter
     }
 }

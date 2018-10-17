@@ -2,6 +2,6 @@
 //___COPYRIGHT___
 //
 
-public struct ___FILEBASENAMEASIDENTIFIER___Entity {
+public struct ___VARIABLE_productName___Entity {
 
 }

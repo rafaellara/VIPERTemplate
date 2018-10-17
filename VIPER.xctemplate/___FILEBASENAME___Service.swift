@@ -4,13 +4,22 @@
 
 import Foundation
 
-public class ___FILEBASENAMEASIDENTIFIER___Service {
+// Uncomment and use if needed
+public typealias ___VARIABLE_productName___ServiceCompletion = (___VARIABLE_productName___Entity) -> Void
+
+public protocol ___VARIABLE_productName___ServiceProtocol {
+    
+    func fetch(completion: @escaping ___VARIABLE_productName___ServiceCompletion)
+}
+
+
+public class ___VARIABLE_productName___Service {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Service: ___FILEBASENAMEASIDENTIFIER___ServiceProtocol {
+extension ___VARIABLE_productName___Service: ___VARIABLE_productName___ServiceProtocol {
     
-    public func fetch(completion: @escaping ___FILEBASENAMEASIDENTIFIER___ServiceCompletion) {
+    public func fetch(completion: @escaping ___VARIABLE_productName___ServiceCompletion) {
         
     }
 }

@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowedTypes</key>
-	<array>
-		<string>public.swift-source</string>
-	</array>
-	<key>DefaultCompletionName</key>
-	<string>File</string>
 	<key>Description</key>
 	<string>Generate files for VIPER architecture: Wireframe, View, Presenter, Interactor and Service</string>
 	<key>Kind</key>
@@ -18,5 +12,22 @@
 	</array>
 	<key>Summary</key>
 	<string>Create all necesseray files for VIPER architecture</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>VIPER Module:</string>
+			<key>Description</key>
+			<string>The name of VIPER module to be created</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyModule</string>
+		</dict>
+	</array>
 </dict>
 </plist>

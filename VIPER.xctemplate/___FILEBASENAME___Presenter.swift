@@ -4,19 +4,26 @@
 
 import Foundation
 
-public class ___FILEBASENAMEASIDENTIFIER___Presenter {
+public protocol ___VARIABLE_productName___PresenterProtocol {
     
-    fileprivate var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
-    fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol?
+    func setView(_ view: ___VARIABLE_productName___ViewProtocol)
+    func setInteractor(_ interactor: ___VARIABLE_productName___InteractorProtocol)
+    
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
+public class ___VARIABLE_productName___Presenter {
     
-    public func setView(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
+    fileprivate var view: ___VARIABLE_productName___ViewProtocol?
+    fileprivate var interactor: ___VARIABLE_productName___InteractorProtocol?
+}
+
+extension ___VARIABLE_productName___Presenter: ___VARIABLE_productName___PresenterProtocol {
+    
+    public func setView(_ view: ___VARIABLE_productName___ViewProtocol) {
         self.view = view
     }
     
-    public func setInteractor(interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol) {
+    public func setInteractor(_ interactor: ___VARIABLE_productName___InteractorProtocol) {
         self.interactor = interactor
     }
 }

@@ -5,20 +5,21 @@
 import Foundation
 import UIKit
 
-let ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier: String = "___FILEBASENAMEASIDENTIFIER___ViewController"
 
-class ___FILEBASENAMEASIDENTIFIER___Wireframe {
+let ___VARIABLE_productName___ViewControllerIdentifier: String = "___VARIABLE_productName___ViewController"
 
-    static func prepare___FILEBASENAMEASIDENTIFIER___View(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol, service: ___FILEBASENAMEASIDENTIFIER___ServiceProtocol) {
+class ___VARIABLE_productName___Wireframe {
+
+    static func prepare___VARIABLE_productName___View(_ view: ___VARIABLE_productName___ViewProtocol, service: ___VARIABLE_productName___ServiceProtocol) {
         
-        let presenter : ___FILEBASENAMEASIDENTIFIER___PresenterProtocol = ___FILEBASENAMEASIDENTIFIER___Presenter()
-        let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol = ___FILEBASENAMEASIDENTIFIER___Interactor()
+        let presenter : ___VARIABLE_productName___PresenterProtocol = ___VARIABLE_productName___Presenter()
+        let interactor: ___VARIABLE_productName___InteractorProtocol = ___VARIABLE_productName___Interactor()
         
-        interactor.setPresenter(presenter: presenter)
-        interactor.setService(service: service)
-        presenter.setInteractor(interactor: interactor)
-        presenter.setView(view: view)
-        view.setPresenter(presenter: presenter)
+        interactor.setPresenter(presenter)
+        interactor.setService(service)
+        presenter.setInteractor(interactor)
+        presenter.setView(view)
+        view.setPresenter(presenter)
         
     }
 }
